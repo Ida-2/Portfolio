@@ -234,9 +234,20 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89);
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 300px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
+@media (min-width: 300px) {
+ .row, .column {
+  padding: 1rem 20px;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(center, minmax(150px, 1fr));
+ }
+
+}
 
